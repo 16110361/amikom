@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Stop Animation</title>
+	<script src="jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("flip").click(function(){
+					$("panel").slideDown(5000);		
+				});
+			$("#Stop").click(function() {
+				$("#panel").Stop();
+			})
+		});
+	</script>
+	<style>
+	#panel, #flip{
+		padding: 5px;
+		font-size: 18px;
+		text-align: center;
+		background-color: #555;
+		border: solid 1px #666;
+		color: white;
+		border-radius: 3px;
+	}
+	#panel{
+		padding: 250px 50px;
+		display: none;
+	}
+	</style>
+</head>
+<body>
+	<button id="stop">Stop sliding</button>
+	<div id="flip">Start sliding</div>
+	<div id="panel">kik menu stop agar berhenti</div>
+</body>
+</html>
